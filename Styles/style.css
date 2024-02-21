@@ -29,6 +29,9 @@ body {
 body p {
   color: #534c64;
 }
+.t-center{
+  text-align: center;
+}
 .primary-button {
   font-size: var(--md-fo-size);
   padding: 1rem 2rem;
@@ -316,17 +319,62 @@ nav ul li a .navicons {
 
 /* multiple game features section  */
 /* sifat Aoc */
-
+.multiple-game-features{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
 .multiple-game-features .features{
-  padding: 20px;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  gap: 2em;
   box-shadow: 0px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 4px  rgba(0, 0, 0, 0.08);
 }
 
+.features img{
+height: 30px;
+width: 30px;
+}
 
+.multiple-game-features .features:hover{
+  background: linear-gradient(to bottom, #f948b2, #7a2ed1);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  border: 3px solid var(--primary-color);
+}
 /* multiple game features section  */
 /* sifat Aoc */
 
-
+/* footer */
+.footer-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  gap: 1rem;
+  padding: 4rem 0;
+  background-color: #0B0223;
+  color: #e7e6e9;
+}
+.footer-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.footer-icon h6{
+  display: inline !important;
+}
+.footer-icon svg{
+  width: 40px;
+  height: 40px;
+}
 
 /* responsive query  */
 
@@ -336,12 +384,17 @@ nav ul li a .navicons {
   .hero-part,
   .we-r-gamer,
   .content-text,
-  .playinstantly {
+  .playinstantly,
+  .footer-section {
     flex-direction: column;
     padding: 1.4rem 0.5rem;
     gap: 2rem;
     justify-content: center;
     align-items: center;
+  }
+  .footer-icon{
+    gap: 0.8rem;
+    flex-wrap: wrap;
   }
   body {
     padding: 0.5rem;
