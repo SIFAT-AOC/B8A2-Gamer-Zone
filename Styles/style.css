@@ -24,6 +24,7 @@
 body {
   max-width: 1440px;
   margin: 0 auto;
+  padding: 1rem;
 }
 body p{
     color: #534c64;
@@ -194,19 +195,76 @@ nav ul li a .navicons {
   .w-r-g-pl{
     padding-left: 8rem;
   }
-/* responsive query  */
+
+  /* game funny videos */
+  .game-video{
+    text-align: start;
+    margin: 1rem 0;
+  }
+  .game-video h2{ 
+    margin: 1rem 0;
+  }
+  .game-video p{
+    margin-bottom: 2rem;
+
+  }
+
+  .grid-videos{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+  }
+  .grid-videos .video-card img{
+    width: 100%;
+  }
+  .grid-videos .video-card p{
+    margin-top: 0.6rem;
+  }
+
+  /* video card animation part */
+.video-card .card-img{
+  position: relative;
+  margin: 0;
+}
+  .v-card-hover-effect{
+    position: absolute;
+    background-color: rgba(0, 0,0,0.5);
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 99%;
+    border-radius: 15px;
+    transform: translateX(-2000px);
+  }
+  .video-card > .card-img:hover .v-card-hover-effect{
+    transform: translateX(0px);
+  }
+  .v-card-hover-effect img{
+    height: 50px;
+    width: 50px !important;
+    position: relative;
+    top: 45%;
+    left: 45%;
+  }
+
+
+  /* responsive query  */
 
 @media screen and (max-width: 576px) {
   nav,
   nav ul,
   .hero-part,
   .we-r-gamer,
-  .content-text {
+  .content-text
+   {
     flex-direction: column;
     padding: 1.4rem 0.5rem;
     gap: 2rem;
     justify-content: center;
     align-items: center;
+  }
+  body {
+    padding: 0.5rem;
   }
   nav > ul > li a {
     margin-right: 5px;
@@ -234,6 +292,21 @@ nav ul li a .navicons {
   .content-text{
     gap: 10px;
   }
+  /* funny video grid */
+  .grid-videos{
+    grid-template-columns: 1fr;
+  }
+  .game-video h2{ 
+    margin: 0.7rem 0;
+  }
+  .game-video p{
+    margin-bottom: 0.7rem ;
+
+  }
+  .game-video{
+    text-align: center;
+    margin: 0.8rem 0;
+  }
 }
 @media screen and (min-width: 576px) and (max-width: 976px) {
   nav,
@@ -247,4 +320,12 @@ nav ul li a .navicons {
   nav > ul > li a {
     margin-right: 5px;
   }
+  /* funny video grid */
+  .grid-videos{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  
+  /*  */
 }
+
