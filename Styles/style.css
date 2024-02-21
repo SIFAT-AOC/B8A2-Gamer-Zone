@@ -26,8 +26,8 @@ body {
   margin: 0 auto;
   padding: 1rem;
 }
-body p{
-    color: #534c64;
+body p {
+  color: #534c64;
 }
 .primary-button {
   font-size: var(--md-fo-size);
@@ -67,8 +67,8 @@ body p{
 .sm-font-size {
   font-size: var(--sm-fo-size);
 }
-.t-end{
-    text-align: end;
+.t-end {
+  text-align: end;
 }
 /* nav css */
 .nav-title {
@@ -165,98 +165,178 @@ nav ul li a .navicons {
 }
 .img-content img,
 .content-img img {
-    width: 100%;
-  }
-.img-content  {
-    order: 2;
-  }
-
-  /* our gamers section */
-
-
-  .we-r-gamer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 2em 0;
-   
-  }
-  .content-img{
-    flex-basis: 100%;
+  width: 100%;
 }
-  .content-text{
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column ;
-    align-items: end;
-    gap: 0.8em;
-    flex-basis: 100%;
-  }
-  .w-r-g-pl{
-    padding-left: 8rem;
-  }
+.img-content {
+  order: 2;
+}
 
-  /* game funny videos */
-  .game-video{
-    text-align: start;
-    margin: 1rem 0;
-  }
-  .game-video h2{ 
-    margin: 1rem 0;
-  }
-  .game-video p{
-    margin-bottom: 2rem;
+/* our gamers section */
 
-  }
+.we-r-gamer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2em 0;
+}
+.content-img {
+  flex-basis: 100%;
+}
+.content-text {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: end;
+  gap: 0.8em;
+  flex-basis: 100%;
+}
+.w-r-g-pl {
+  padding-left: 8rem;
+}
 
-  .grid-videos{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 1rem;
-  }
-  .grid-videos .video-card img{
-    width: 100%;
-  }
-  .grid-videos .video-card p{
-    margin-top: 0.6rem;
-  }
+/* game funny videos */
+.game-video {
+  text-align: start;
+  margin: 1rem 0;
+}
+.game-video h2 {
+  margin: 1rem 0;
+}
+.game-video p {
+  margin-bottom: 2rem;
+}
 
-  /* video card animation part */
-.video-card .card-img{
+.grid-videos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.grid-videos .video-card img {
+  width: 100%;
+}
+.grid-videos .video-card p {
+  margin-top: 0.6rem;
+}
+
+/* video card animation part */
+.video-card .card-img {
   position: relative;
   margin: 0;
 }
-  .v-card-hover-effect{
-    position: absolute;
-    background-color: rgba(0, 0,0,0.5);
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    height: 99%;
-    border-radius: 15px;
-    transform: translateX(-2000px);
-  }
-  .video-card > .card-img:hover .v-card-hover-effect{
-    transform: translateX(0px);
-  }
-  .v-card-hover-effect img{
-    height: 50px;
-    width: 50px !important;
-    position: relative;
-    top: 45%;
-    left: 45%;
-  }
+.v-card-hover-effect {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 99%;
+  border-radius: 15px;
+  transform: translateX(-2000px);
+}
+.video-card > .card-img:hover .v-card-hover-effect {
+  transform: translateX(0px);
+}
+.v-card-hover-effect img {
+  height: 50px;
+  width: 50px !important;
+  position: relative;
+  top: 45%;
+  left: 45%;
+}
+/* play instantly */
+.playinstantly {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 150px;
+}
+.playinstantly .instcontent-img .image1 {
+  width: 100%;
+}
+.instcontent-img {
+  position: relative;
+
+  flex-basis: 100%;
+}
+.playinstantly .instcontent-img .image2 {
+  position: absolute;
+  bottom: -65px;
+  left: -104px;
+  width: 250px;
+}
+
+.playinstantly > .instacontent-text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+
+  flex-basis: 100%;
+}
+.playinstantly > .instacontent-text p {
+  padding-right: 6rem;
+}
+
+/* play game */
 
 
-  /* responsive query  */
+.playinstantly .playgame-img .image1 {
+  width: 100%;
+}
+.playgame-img {
+  position: relative;
+  flex-basis: 100%;
+}
+.playinstantly .playgame-img .image2 {
+  position: absolute;
+  bottom: -65px;
+  right: -104px;
+  width: 250px;
+}
+
+.playinstantly > .playgame-text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-basis: 100%;
+
+  padding: 2rem;
+}
+.playinstantly > .playgame-text p {
+  padding-left: 6rem;
+}
+
+
+/* multiple game features section  */
+/* sifat Aoc */
+
+.multiple-game-features .features{
+  padding: 20px;
+  box-shadow: 0px;
+}
+
+
+/* multiple game features section  */
+/* sifat Aoc */
+
+
+
+/* responsive query  */
 
 @media screen and (max-width: 576px) {
   nav,
   nav ul,
   .hero-part,
   .we-r-gamer,
-  .content-text
-   {
+  .content-text,
+  .playinstantly {
     flex-direction: column;
     padding: 1.4rem 0.5rem;
     gap: 2rem;
@@ -285,27 +365,56 @@ nav ul li a .navicons {
   .semi-big-fo-size {
     font-size: 2rem;
   }
-  .w-r-g-pl{
+  .w-r-g-pl {
     padding-left: 0rem;
     text-align: center;
   }
-  .content-text{
+  .content-text {
     gap: 10px;
   }
   /* funny video grid */
-  .grid-videos{
+  .grid-videos {
     grid-template-columns: 1fr;
   }
-  .game-video h2{ 
+  .game-video h2 {
     margin: 0.7rem 0;
   }
-  .game-video p{
-    margin-bottom: 0.7rem ;
-
+  .game-video p {
+    margin-bottom: 0.7rem;
   }
-  .game-video{
+  .game-video {
     text-align: center;
     margin: 0.8rem 0;
+  }
+  /* play instantly video game */
+  .playinstantly{
+    margin-bottom: 20px;
+  }
+  .playinstantly > .instacontent-text p {
+    padding-right: 0rem;
+  }
+  .playinstantly .instcontent-img .image2 {
+    position: absolute;
+    bottom: -21px;
+    left: -16px;
+    width: 114px;
+  }
+  .playinstantly > .instacontent-text {
+    gap: 0.9rem;
+    padding: 0.7rem;
+  }
+  .playinstantly > .playgame-text p {
+    padding: 0rem;
+  }
+  .playinstantly .playgame-img .image2 {
+    position: absolute;
+    bottom: -21px;
+    right: -16px;
+    width: 114px;
+  }
+  .playinstantly > .playgame-text {
+    gap: 0.9rem;
+    padding: 0.7rem;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 976px) {
@@ -321,11 +430,38 @@ nav ul li a .navicons {
     margin-right: 5px;
   }
   /* funny video grid */
-  .grid-videos{
-    grid-template-columns: repeat(2,1fr);
+  .grid-videos {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  
-  /*  */
+  /* play instant video   */
+  .playinstantly{
+    margin-bottom: 60px;
+  }
+  .playinstantly > .instacontent-text p {
+    padding-right: 0rem;
+  }
+  .playinstantly .instcontent-img .image2 {
+    position: absolute;
+    bottom: -21px;
+    left: -16px;
+    width: 160px;
+  }
+  .playinstantly > .instacontent-text {
+    gap: 1rem;
+    padding: 0rem;
+  }
+  .playinstantly > .playgame-text p {
+    padding: 0rem;
+  }
+  .playinstantly .playgame-img .image2 {
+    position: absolute;
+    bottom: -21px;
+    right: -16px;
+    width: 160px;
+  }
+  .playinstantly > .playgame-text {
+    gap: 1rem;
+    padding: 0rem;
+  }
 }
-
